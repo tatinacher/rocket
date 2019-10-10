@@ -1,0 +1,50 @@
+.header {
+    @include flex-row;
+    position: fixed;
+    width: 100%;
+    color: $white-text;
+    text-transform: uppercase;
+    height: 74px;
+    align-items: flex-end;
+}
+.header-wrapper {
+    @include flex-row;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo-group {
+    @include flex-row-centered;
+    flex-basis: 25%;
+    .company-name {
+        font-size: 18px;
+    }
+}
+.connect {
+    @include flex-row-centered;
+    flex-basis: 25%;
+    .phone {
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    .order {
+        margin: 0 10px;
+    }
+}
+.nav {
+    width: 100%;
+    @include flex-row-centered;
+    flex-basis: 50%;
+    ul {
+        @include flex-row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 620px;
+        li {
+            font-size: 15px;
+        }
+    }
+}
+li.point {
+    color: $point-color;
+}

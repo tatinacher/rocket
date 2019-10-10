@@ -1,0 +1,20 @@
+.order-btn {
+    @include button;
+    background: $button;
+    border: none;
+    margin-right: 20px;
+}
+
+.watch-btn {
+    @include button;
+    border: 3px solid $button;
+    background: transparent;
+    &:hover{
+        border: 0;
+    }
+}
+.small-order-btn {
+    @include button-small;
+    border: 2px solid $button;
+    background: transparent;
+}

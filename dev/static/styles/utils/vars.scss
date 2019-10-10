@@ -1,0 +1,25 @@
+// Colors
+$white-text: #ffffff;
+$black: #000000;
+$button: #15B28D;
+$button-hover: #0DD1A2;
+$point-color: #B0ACAC;
+$underline: #0DD1A2;
+// Sizes
+$base-font-size: 16px;
+$max-width: 1366px;
+
+$breakpoints: (
+  "phone"       : 400px,
+  "phone-wide"  : 480px,
+  "phablet"     : 560px,
+  "tablet-small": 640px,
+  "tablet"      : 768px,
+  "tablet-wide" : 1024px,
+  "desktop"     : 1248px,
+  "desktop-wide": 1440px
+);
+
+$content-size: 1024px;
+
+// Fonts
