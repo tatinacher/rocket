@@ -13,12 +13,18 @@ $(document).ready(function() {
         $(this).toggleClass("active");
     });
     $(".mobile-menu-burger").click(function() {
-        console.log(123)
         $(".mobile-nav").toggleClass("active");  
         $(this).find(".burger-btn").toggleClass("close");  
         $(".content-wrapper").each(function() {
             $(this).toggleClass("hidden");
-          })
-        //$(this).find(".icon").toggleClass("close");  
+        });
+    });
+    $(document)
+    .on('click', 'a[href^="#"]', function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $('html, body')
+            .animate({
+                scrollTop: $(target).offset().top}, 'slow', 'swing', function() {});
     });
 });
