@@ -193,6 +193,18 @@ button { outline: none; }
     height: 72px;
     width: 72px;
     background: $button;
+    @media (max-width: #{$screen-sm-min}) {
+      min-width: 32px;
+      max-width: 32px;
+    }
+
+    .icon-small {
+      display: none;
+      @media (max-width: #{$screen-sm-min}) {
+        display: block;
+        width: 16px;
+      }
+    }
   }
 }
 
@@ -215,6 +227,13 @@ button { outline: none; }
       font-weight: bold;
       padding-left: 20px;
       padding-right: 10px;
+      @media (max-width: #{$screen-sm-min}) {
+        display: none;
+      }
+    }
+    @media (max-width: #{$screen-sm-min}) {
+      text-align: left;
+      padding-left: 8px;
     }
   }
 }
@@ -226,6 +245,9 @@ button { outline: none; }
   &:hover{
     background: $button-hover;
     cursor: pointer;
+  }
+  @media (max-width: #{$screen-sm-min}) {
+    display: none;
   }
 }
 .icon.close{
