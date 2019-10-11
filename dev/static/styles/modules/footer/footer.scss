@@ -2,18 +2,3 @@ footer {
     flex: 0 0 auto;
     z-index: 100;
 }
-.scroll-wrapper {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.scroll {
-    background: transparent;
-    border: none;
-    outline: none;
-    @media (max-width: #{$screen-sm-min}) {
-        display: none;
-    }
-}
