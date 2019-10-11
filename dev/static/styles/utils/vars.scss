@@ -1,6 +1,7 @@
 // Colors
 $white-text: #ffffff;
-$black: #000000;
+$white: #ffffff;
+$black: #1C1C1C;
 $button: #15B28D;
 $button-hover: #0DD1A2;
 $point-color: #B0ACAC;
@@ -9,16 +10,17 @@ $underline: #0DD1A2;
 $base-font-size: 16px;
 $max-width: 1366px;
 
-$breakpoints: (
-  "phone"       : 400px,
-  "phone-wide"  : 480px,
-  "phablet"     : 560px,
-  "tablet-small": 640px,
-  "tablet"      : 768px,
-  "tablet-wide" : 1024px,
-  "desktop"     : 1248px,
-  "desktop-wide": 1440px
-);
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
 
 $content-size: 1024px;
 

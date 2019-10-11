@@ -5,33 +5,126 @@ block variables
 	- var pageClass = 'index-page'
 
 block content
-	.first-page.content
-		.left-space
-		.content-wrapper
-			.main-header-text
-				p Digital Planet VR
-			.header-undertext
-				p Образовательный виртуальный планетарий в Новороссийске.
-				p Познавательное приключение в мир звёзд и галактик.
-			.btn-wrapper 
-				button.order-btn 
-					include ../static/images/svg/Vector.svg 
-					p Заказать
-				button.watch-btn 
-					include ../static/images/svg/video.svg 
-					p Видео
-		.boy-img
-	.second-page.content
-		.left-space
-		.content-wrapper
-			.header-text
-				p Часто задаваемые вопросы
-				.underline
-			.questions-wrapper
-				.question
-					.question__header
-						p Безопасны ли VR-очки для зрения ребёнка? Какие есть ограничения?
-						.toggle-btn
-					.question__text
-						p VR-очки были разработаны специально для того, чтобы каждый человек, независимо от возраста, качества зрения и опыта использования аналогичных продуктов мог безопасно и легко пользоваться этой технологией. У нас есть сертификат качества продукции и лицензия для её использования на территории РФ. Для людей с зрением, отличным от идеального, на VR-очках предусмотрена регулировка диоптрий.  
-		.boy-img
+	#main-page.section
+		.content
+			.left-space
+			.content-wrapper
+				.main-header-text
+					p Digital Planet VR
+				.header-undertext
+					p Образовательный виртуальный планетарий в Новороссийске.
+					p Познавательное приключение в мир звёзд и галактик.
+				.btn-wrapper 
+					button.order-btn 
+						include ../static/images/svg/Vector.svg 
+						p Заказать
+					button.watch-btn 
+						include ../static/images/svg/video.svg 
+						p Видео
+			.kid-img
+	#how-it-works.section
+		.content
+			.left-space
+			.content-wrapper
+				.header-text
+					p Как это работает?
+					.underline
+				.sections
+					.section_element
+						.section__image-wrapper
+							.frame
+							.img
+								img(src="../static/images/content/Rectangle2.jpg" alt="img1")
+							.number
+								p 1
+						.section__text
+							.section__header
+								p Готовим инвентарь
+							.section__description
+								p Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.
+					.section_element
+						.section__image-wrapper
+							.frame
+							.img
+								img(src="../static/images/content/Rectangle3.jpg" alt="img1")
+							.number
+								p 2
+						.section__text
+							.section__header
+								p Готовим инвентарь
+							.section__description
+								p Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.
+					.section_element
+						.section__image-wrapper
+							.frame
+							.img
+								img(src="../static/images/content/Rectangle3.jpg" alt="img1")
+							.number
+								p 3
+						.section__text
+							.section__header
+								p Готовим инвентарь
+							.section__description
+								p Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.
+					.section_element
+						.section__image-wrapper
+							.frame
+							.img
+								img(src="../static/images/content/Rectangle4.jpg" alt="img1")
+							.number
+								p 4
+						.section__text
+							.section__header
+								p Готовим инвентарь
+							.section__description
+								p Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.
+			.right-space
+	#question.section
+		.content
+			.left-space
+			.content-wrapper
+				.header-text
+					p Часто задаваемые вопросы
+					.underline
+				.questions-wrapper
+					.question
+						.question__header
+							.question__header-wrapper
+								p •  
+								p Сколько длится сеанс? Дети не устают во время просмотра?
+							.toggle-btn
+								.icon
+									include ../static/images/svg/+.svg 
+						.question__text.hidden
+							p VR-очки были разработаны специально для того, чтобы каждый человек, независимо от возраста, качества зрения и опыта использования аналогичных продуктов мог безопасно и легко пользоваться этой технологией. У нас есть сертификат качества продукции и лицензия для её использования на территории РФ. Для людей с зрением, отличным от идеального, на VR-очках предусмотрена регулировка диоптрий.  
+					.question
+						.question__header
+							.question__header-wrapper
+								p •  
+								p Безопасны ли VR-очки для зрения ребёнка? Какие есть ограничения?
+							.toggle-btn
+								.icon
+										include ../static/images/svg/+.svg 
+						.question__text.hidden
+							p VR-очки были разработаны специально для того, чтобы каждый человек, независимо от возраста, качества зрения и опыта использования аналогичных продуктов мог безопасно и легко пользоваться этой технологией. У нас есть сертификат качества продукции и лицензия для её использования на территории РФ. Для людей с зрением, отличным от идеального, на VR-очках предусмотрена регулировка диоптрий.  
+					.question
+						.question__header
+							.question__header-wrapper
+								p •  
+								p Дейсвтительно ли это образовательный метод, или это лишь игрушка?
+							.toggle-btn
+								.icon
+									include ../static/images/svg/+.svg 
+						.question__text.hidden
+							p VR-очки были разработаны специально для того, чтобы каждый человек, независимо от возраста, качества зрения и опыта использования аналогичных продуктов мог безопасно и легко пользоваться этой технологией. У нас есть сертификат качества продукции и лицензия для её использования на территории РФ. Для людей с зрением, отличным от идеального, на VR-очках предусмотрена регулировка диоптрий.  
+					.question
+						.question__header
+							.question__header-wrapper
+								p •  
+								p Всё понятно! Хочу заказать выезд VR планетария, что нужно сделать?
+							.toggle-btn
+								.icon
+									include ../static/images/svg/+.svg 
+						.question__text.hidden
+							p VR-очки были разработаны специально для того, чтобы каждый человек, независимо от возраста, качества зрения и опыта использования аналогичных продуктов мог безопасно и легко пользоваться этой технологией. У нас есть сертификат качества продукции и лицензия для её использования на территории РФ. Для людей с зрением, отличным от идеального, на VR-очках предусмотрена регулировка диоптрий.  
+			.boy-img

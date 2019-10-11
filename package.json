@@ -35,6 +35,7 @@
     "synp": "^1.7.0"
   },
   "dependencies": {
+    "fullpage.js": "^3.0.7",
     "normalize.css": "^8.0.0",
     "svg4everybody": "^2.1.9"
   }

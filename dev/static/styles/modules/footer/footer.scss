@@ -1,4 +1,7 @@
-footer { flex: 0 0 auto; }
+footer { 
+    flex: 0 0 auto;
+    z-index: 100;
+}
 .scroll-wrapper {
     position: fixed;
     bottom: 0;
@@ -10,4 +13,7 @@ footer { flex: 0 0 auto; }
     background: transparent;
     border: none;
     outline: none;
+    @media (max-width: #{$screen-sm-min}) {
+        display: none;
+    }
 }

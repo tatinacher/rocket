@@ -6,6 +6,10 @@
     text-transform: uppercase;
     height: 74px;
     align-items: flex-end;
+    z-index: 100;
+    @media (max-width: #{$screen-sm-min}) {
+        height: 56px;
+    }
 }
 .header-wrapper {
     @include flex-row;
@@ -15,8 +19,12 @@
 .logo-group {
     @include flex-row-centered;
     flex-basis: 25%;
+    z-index: 100;
     .company-name {
         font-size: 18px;
+        @media (max-width: #{$screen-sm-min}) {
+            display: none;
+        }
     }
 }
 .connect {
@@ -26,15 +34,22 @@
         font-weight: bold;
         font-size: 16px;
         margin: 0 10px;
+        @media (max-width: #{$screen-sm-min}) {
+            display: none;
+        }
     }
     .order {
         margin: 0 10px;
+        z-index: 100;
     }
 }
 .nav {
     width: 100%;
     @include flex-row-centered;
     flex-basis: 50%;
+    @media (max-width: #{$screen-sm-min}) {
+        display: none;
+    }
     ul {
         @include flex-row;
         justify-content: space-between;
@@ -42,9 +57,89 @@
         max-width: 620px;
         li {
             font-size: 15px;
+            a {
+                color: $white-text;
+            }
         }
     }
 }
 li.point {
     color: $point-color;
+}
+li.active.nav-item {
+    a {
+        color: $button
+    }
+}
+.menu-burger {
+    height: 2px;
+    border: 1px solid $white-text;
+    width: 24px;
+    &:last-child {
+        width: 16px;
+        margin-left: 8px;
+    }
+    z-index: 100;
+}
+.mobile-menu-burger{
+    display: none;
+    .burger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 16px;
+    }
+    @media (max-width: #{$screen-sm-min}) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 25%
+    }
+}
+
+.mobile-nav{
+    display: none;
+    @media (max-width: #{$screen-sm-min}) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background: $black;
+        opacity: 0.9;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        padding: 100px 0px;
+        justify-content: flex-end;
+        a {
+            color: $white-text;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+    }
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: left;
+        width: 100%;
+        padding-left: 20px;
+        justify-content: space-between;
+        height: inherit;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .stripe{
+        width: 100%;
+        height: 1px;
+        border: 1px solid $white-text;
+        opacity: 0.24;
+    }
+    .phone {
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 50px;
+    }
+
 }

@@ -36,16 +36,30 @@
           </div>
           <div class="nav">
             <ul>
-              <li> <a>O продукте</a></li>
+              <li class="nav-item"> <a href="#main-page"> O продукте</a></li>
               <li class="point">•</li>
-              <li> <a>Как работает</a></li>
+              <li class="nav-item"> <a href="#how-it-works"> Как работает</a></li>
               <li class="point">•</li>
-              <li> <a>Технология</a></li>
+              <li class="nav-item"> <a href="#technology"> Технология</a></li>
               <li class="point">•</li>
-              <li> <a>Вопросы</a></li>
+              <li class="nav-item"> <a href="#question"> Вопросы</a></li>
               <li class="point">•</li>
-              <li> <a>Контакты</a></li>
+              <li class="nav-item"> <a href="#contacts"> Контакты</a></li>
             </ul>
+          </div>
+          <div class="mobile-nav">
+            <ul class="nav-items">
+              <li class="nav-item"> <a href="#main-page"> Главная</a></li>
+              <li class="nav-item"> <a href="#main-page"> O продукте</a></li>
+              <li class="nav-item"> <a href="#how-it-works"> Как работает</a></li>
+              <li class="nav-item"> <a href="#technology"> Технология</a></li>
+              <li class="nav-item"> <a href="#question"> Вопросы</a></li>
+              <li class="nav-item"> <a href="#contacts"> Контакты</a></li>
+            </ul>
+            <div class="stripe"></div>
+            <div class="phone">
+              <p>8 (800) 555 35 75</p>
+            </div>
           </div>
           <div class="connect">
             <div class="order">
@@ -57,58 +71,214 @@
               <p>8 (800) 555 35 75</p>
             </div>
           </div>
+          <div class="mobile-menu-burger">
+            <div class="burger-btn">
+              <div class="menu-burger"></div>
+              <div class="menu-burger"></div>
+              <div class="menu-burger"></div>
+            </div>
+          </div>
         </div>
       </header>
-      <div class="wrapper-content">
-        <div class="first-page content">
-          <div class="left-space"></div>
-          <div class="content-wrapper">
-            <div class="main-header-text">
-              <p>Digital Planet VR</p>
-            </div>
-            <div class="header-undertext">
-              <p>Образовательный виртуальный планетарий в Новороссийске.</p>
-              <p>Познавательное приключение в мир звёзд и галактик.</p>
-            </div>
-            <div class="btn-wrapper"> 
-              <button class="order-btn">
-                 <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="wrapper-content" id="pagepiling">
+        <div class="section" id="main-page">
+          <div class="content">
+            <div class="left-space"></div>
+            <div class="content-wrapper">
+              <div class="main-header-text">
+                <p>Digital Planet VR</p>
+              </div>
+              <div class="header-undertext">
+                <p>Образовательный виртуальный планетарий в Новороссийске.</p>
+                <p>Познавательное приключение в мир звёзд и галактик.</p>
+              </div>
+              <div class="btn-wrapper"> 
+                <button class="order-btn">
+                   <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M30.412 9.53846L28.4847 7.61118C28.2234 7.34985 27.7661 7.28451 27.4394 7.48051C26.2961 8.19916 24.8588 8.03582 23.9115 7.08851C22.9642 6.1412 22.8008 4.67123 23.5195 3.56059C23.7155 3.23393 23.6828 2.80927 23.3888 2.51528L21.4615 0.587995C20.6776 -0.195988 19.3709 -0.195988 18.5869 0.587995L13.687 5.48789L15.7123 7.51316L14.5363 8.68915L12.5111 6.66386L0.587995 18.5869C-0.195988 19.3709 -0.195988 20.6776 0.587995 21.4615L2.51528 23.3888C2.7766 23.6501 3.20127 23.7155 3.52793 23.5195C4.63858 22.8335 6.07586 23.0295 7.02317 23.9442C7.93782 24.8588 8.13383 26.2961 7.44785 27.4394C7.25185 27.7661 7.28451 28.1907 7.5785 28.452L9.53846 30.412C9.93045 30.804 10.4531 31 10.9758 31C11.4984 31 12.0211 30.804 12.4131 30.412L24.3361 18.4889L22.3109 16.4636L23.4868 15.2877L25.5121 17.313L30.412 12.4131C31.196 11.6291 31.196 10.3224 30.412 9.53846ZM15.647 9.83246L16.823 8.65647L19.0116 10.8451L17.8356 12.0211L15.647 9.83246ZM21.1349 15.3203L18.9463 13.1317L20.1222 11.9557L22.3109 14.1444L21.1349 15.3203Z" fill="white"/>
 </svg>
 
-                <p>Заказать</p>
-              </button>
-              <button class="watch-btn">
-                 <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <p>Заказать</p>
+                </button>
+                <button class="watch-btn">
+                   <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.5 0C6.93809 0 0 6.93809 0 15.5C0 24.0619 6.93809 31 15.5 31C24.0619 31 31 24.0619 31 15.5C31 6.93809 24.0619 0 15.5 0ZM20.8143 16.8286L13.4333 21.8845C12.3631 22.6226 10.8869 21.8476 10.8869 20.556V10.444C10.8869 9.15238 12.4 8.37738 13.4333 9.11548L20.7774 14.1714C21.7369 14.7988 21.7369 16.2012 20.8143 16.8286Z" fill="white"/>
 </svg>
 
-                <p>Видео</p>
-              </button>
+                  <p>Видео</p>
+                </button>
+              </div>
             </div>
+            <div class="kid-img"></div>
           </div>
-          <div class="boy-img"></div>
         </div>
-        <div class="second-page content">
-          <div class="left-space"></div>
-          <div class="content-wrapper">
-            <div class="header-text">
-              <p>Часто задаваемые вопросы</p>
-              <div class="underline"></div>
-            </div>
-            <div class="questions-wrapper">
-              <div class="question">
-                <div class="question__header">
-                  <p>Безопасны ли VR-очки для зрения ребёнка? Какие есть ограничения?</p>
-                  <div class="toggle-btn"></div>
+        <div class="section" id="how-it-works">
+          <div class="content">
+            <div class="left-space"></div>
+            <div class="content-wrapper">
+              <div class="header-text">
+                <p>Как это работает?</p>
+                <div class="underline"></div>
+              </div>
+              <div class="sections">
+                <div class="section_element">
+                  <div class="section__image-wrapper">
+                    <div class="frame"></div>
+                    <div class="img"><img src="../static/images/content/Rectangle2.jpg" alt="img1"></div>
+                    <div class="number">
+                      <p>1</p>
+                    </div>
+                  </div>
+                  <div class="section__text">
+                    <div class="section__header">
+                      <p>Готовим инвентарь</p>
+                    </div>
+                    <div class="section__description">
+                      <p>Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="question__text">
-                  <p>VR-очки были разработаны специально для того, чтобы каждый человек, независимо от возраста, качества зрения и опыта использования аналогичных продуктов мог безопасно и легко пользоваться этой технологией. У нас есть сертификат качества продукции и лицензия для её использования на территории РФ. Для людей с зрением, отличным от идеального, на VR-очках предусмотрена регулировка диоптрий.  </p>
+                <div class="section_element">
+                  <div class="section__image-wrapper">
+                    <div class="frame"></div>
+                    <div class="img"><img src="../static/images/content/Rectangle3.jpg" alt="img1"></div>
+                    <div class="number">
+                      <p>2</p>
+                    </div>
+                  </div>
+                  <div class="section__text">
+                    <div class="section__header">
+                      <p>Готовим инвентарь</p>
+                    </div>
+                    <div class="section__description">
+                      <p>Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="section_element">
+                  <div class="section__image-wrapper">
+                    <div class="frame"></div>
+                    <div class="img"><img src="../static/images/content/Rectangle3.jpg" alt="img1"></div>
+                    <div class="number">
+                      <p>3</p>
+                    </div>
+                  </div>
+                  <div class="section__text">
+                    <div class="section__header">
+                      <p>Готовим инвентарь</p>
+                    </div>
+                    <div class="section__description">
+                      <p>Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="section_element">
+                  <div class="section__image-wrapper">
+                    <div class="frame"></div>
+                    <div class="img"><img src="../static/images/content/Rectangle4.jpg" alt="img1"></div>
+                    <div class="number">
+                      <p>4</p>
+                    </div>
+                  </div>
+                  <div class="section__text">
+                    <div class="section__header">
+                      <p>Готовим инвентарь</p>
+                    </div>
+                    <div class="section__description">
+                      <p>Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="right-space"></div>
           </div>
-          <div class="boy-img"></div>
+        </div>
+        <div class="section" id="question">
+          <div class="content">
+            <div class="left-space"></div>
+            <div class="content-wrapper">
+              <div class="header-text">
+                <p>Часто задаваемые вопросы</p>
+                <div class="underline"></div>
+              </div>
+              <div class="questions-wrapper">
+                <div class="question">
+                  <div class="question__header">
+                    <div class="question__header-wrapper">
+                      <p>•  </p>
+                      <p>Сколько длится сеанс? Дети не устают во время просмотра?</p>
+                    </div>
+                    <div class="toggle-btn">
+                      <div class="icon"><svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.688 10.784L10.144 10.784L10.144 0.367998L12.928 0.367998L12.928 10.784L22.384 10.784L22.384 13.472L12.928 13.472L12.928 23.936L10.144 23.936L10.144 13.472L0.688 13.472L0.688 10.784Z" fill="white"/>
+</svg>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="question__text hidden">
+                    <p>VR-очки были разработаны специально для того, чтобы каждый человек, независимо от возраста, качества зрения и опыта использования аналогичных продуктов мог безопасно и легко пользоваться этой технологией. У нас есть сертификат качества продукции и лицензия для её использования на территории РФ. Для людей с зрением, отличным от идеального, на VR-очках предусмотрена регулировка диоптрий.  </p>
+                  </div>
+                </div>
+                <div class="question">
+                  <div class="question__header">
+                    <div class="question__header-wrapper">
+                      <p>•  </p>
+                      <p>Безопасны ли VR-очки для зрения ребёнка? Какие есть ограничения?</p>
+                    </div>
+                    <div class="toggle-btn">
+                      <div class="icon"><svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.688 10.784L10.144 10.784L10.144 0.367998L12.928 0.367998L12.928 10.784L22.384 10.784L22.384 13.472L12.928 13.472L12.928 23.936L10.144 23.936L10.144 13.472L0.688 13.472L0.688 10.784Z" fill="white"/>
+</svg>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="question__text hidden">
+                    <p>VR-очки были разработаны специально для того, чтобы каждый человек, независимо от возраста, качества зрения и опыта использования аналогичных продуктов мог безопасно и легко пользоваться этой технологией. У нас есть сертификат качества продукции и лицензия для её использования на территории РФ. Для людей с зрением, отличным от идеального, на VR-очках предусмотрена регулировка диоптрий.  </p>
+                  </div>
+                </div>
+                <div class="question">
+                  <div class="question__header">
+                    <div class="question__header-wrapper">
+                      <p>•  </p>
+                      <p>Дейсвтительно ли это образовательный метод, или это лишь игрушка?</p>
+                    </div>
+                    <div class="toggle-btn">
+                      <div class="icon"><svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.688 10.784L10.144 10.784L10.144 0.367998L12.928 0.367998L12.928 10.784L22.384 10.784L22.384 13.472L12.928 13.472L12.928 23.936L10.144 23.936L10.144 13.472L0.688 13.472L0.688 10.784Z" fill="white"/>
+</svg>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="question__text hidden">
+                    <p>VR-очки были разработаны специально для того, чтобы каждый человек, независимо от возраста, качества зрения и опыта использования аналогичных продуктов мог безопасно и легко пользоваться этой технологией. У нас есть сертификат качества продукции и лицензия для её использования на территории РФ. Для людей с зрением, отличным от идеального, на VR-очках предусмотрена регулировка диоптрий.  </p>
+                  </div>
+                </div>
+                <div class="question">
+                  <div class="question__header">
+                    <div class="question__header-wrapper">
+                      <p>•  </p>
+                      <p>Всё понятно! Хочу заказать выезд VR планетария, что нужно сделать?</p>
+                    </div>
+                    <div class="toggle-btn">
+                      <div class="icon"><svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.688 10.784L10.144 10.784L10.144 0.367998L12.928 0.367998L12.928 10.784L22.384 10.784L22.384 13.472L12.928 13.472L12.928 23.936L10.144 23.936L10.144 13.472L0.688 13.472L0.688 10.784Z" fill="white"/>
+</svg>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="question__text hidden">
+                    <p>VR-очки были разработаны специально для того, чтобы каждый человек, независимо от возраста, качества зрения и опыта использования аналогичных продуктов мог безопасно и легко пользоваться этой технологией. У нас есть сертификат качества продукции и лицензия для её использования на территории РФ. Для людей с зрением, отличным от идеального, на VR-очках предусмотрена регулировка диоптрий.  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="boy-img"></div>
+          </div>
         </div>
       </div>
       <footer class="footer">
