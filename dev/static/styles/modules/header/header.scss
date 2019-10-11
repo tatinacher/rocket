@@ -94,19 +94,39 @@ li.active.nav-item {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-basis: 25%
+        flex-basis: 25%;
+        .close {
+            justify-content: center;
+            .menu-burger {
+                &:first-child {
+                    transform: rotate(-45deg);
+                    transition: 0.5s;
+                }
+                &:nth-child(2n){
+                    margin-top: -2px;
+                    transform: rotate(45deg);
+                    transition: 0.5s;
+                }
+                &:last-child {
+                    display: none;
+                    transition: 0.5s;
+                }
+            }
+        }
     }
 }
 
 .mobile-nav{
     display: none;
     @media (max-width: #{$screen-sm-min}) {
-        display: flex;
+        z-index: -1;
+        opacity: 0;
+        transition: 0.5s;
+        display: none;
         flex-direction: column;
         align-items: center;
         position: absolute;
         background: $black;
-        opacity: 0.9;
         height: 100vh;
         width: 100%;
         top: 0;
@@ -142,4 +162,10 @@ li.active.nav-item {
         padding-top: 50px;
     }
 
+}
+.mobile-nav.active {
+    opacity: 0.9;
+    transition: 0.5s;
+    z-index: 99;
+    display: flex;
 }

@@ -9,8 +9,13 @@ $(document).ready(function() {
           })
         $(this).toggleClass("active");
     });
-    $(".burger-btn").click(function() {
-        //$(this).closest(".question").find(".question__text").toggleClass("hidden");  
+    $(".mobile-menu-burger").click(function() {
+        console.log(123)
+        $(".mobile-nav").toggleClass("active");  
+        $(this).find(".burger-btn").toggleClass("close");  
+        $(".content-wrapper").each(function() {
+            $(this).toggleClass("hidden");
+          })
         //$(this).find(".icon").toggleClass("close");  
     });
 });
