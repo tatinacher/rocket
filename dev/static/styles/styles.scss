@@ -65,7 +65,6 @@ button { outline: none; }
   @media (max-width: #{$screen-sm-min}) {
     background-position: center center;
     background-size: auto 100%;
-    display: none;
   }
 }
 
@@ -105,6 +104,10 @@ button { outline: none; }
   .underline{
     height: 2px;
     border: 1px solid $underline;
+  }
+  @media (max-width: #{$screen-sm-min}) {
+    font-size: 28px;
+    text-align: left;
   }
 }
 
@@ -157,6 +160,7 @@ button { outline: none; }
     flex-basis: 75%;
     @media (max-width: #{$screen-sm-min}) {
       flex-basis: auto;
+      display: none;
     }
   }
 }
@@ -333,7 +337,22 @@ button { outline: none; }
     }
   }
 }
+.text-wrapper {
+  p {
+    font-size: 17px;
+    font-weight: 300;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+}
 
+#about-product {
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 
 
 // // Small devices
