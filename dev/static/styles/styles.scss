@@ -86,6 +86,7 @@ button { outline: none; }
     }
   }
   .content-wrapper{
+    z-index: 10;
     @media (max-width: #{$screen-lg-min}) {
       position: relative;
       z-index: 4;
@@ -480,6 +481,10 @@ button { outline: none; }
     .soc-icon {
       opacity: 0.5;
       padding: 10px;
+      &:hover{
+        opacity: 1;
+        cursor: pointer;
+      }
     }
   }
   .kid-img {
