@@ -3,8 +3,10 @@ $(document).ready(function() {
         $(".question__text").each(function() {
             $(this).addClass("hidden");
         })
-        $(this).closest(".question").find(".question__text").toggleClass("hidden");  
-        $(this).find(".icon").toggleClass("close");  
+        if (!$(this).find(".icon").hasClass("close")){
+            $(this).closest(".question").find(".question__text").toggleClass("hidden");  
+        }
+        $(this).find(".icon").toggleClass("close");          
     });
     $(".nav-item").click(function() {
         $(".nav-item").each(function() {
@@ -27,4 +29,12 @@ $(document).ready(function() {
             .animate({
                 scrollTop: $(target).offset().top}, 'slow', 'swing', function() {});
     });
+    if(window.innerWidth < 768) {
+        $(".sections").slick({
+            prevArrow: "<div class='a-left control-c prev slick-prev arrow-wrapper'><img class='slick-arrow' src='../../static/images/content/arrow_prev.png'></div>",
+            nextArrow: "<div class='a-right control-c next slick-next arrow-wrapper'><img class='slick-arrow' src='../../static/images/content/arrow_prev.png'></div>",
+        });
+    }
+    
+
 });
