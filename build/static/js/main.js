@@ -31,8 +31,8 @@ $(document).ready(function() {
     });
     if(window.innerWidth < 992) {
         $(".sections").slick({
-            prevArrow: "<div class='a-left control-c prev slick-prev arrow-wrapper'><img class='slick-arrow' src='../../static/images/content/arrow_prev.png'></div>",
-            nextArrow: "<div class='a-right control-c next slick-next arrow-wrapper'><img class='slick-arrow' src='../../static/images/content/arrow_prev.png'></div>",
+            prevArrow: "<div class='a-left control-c prev slick-prev arrow-wrapper'><img class='slick-arrow' src='static/images/content/arrow_prev.png'></div>",
+            nextArrow: "<div class='a-right control-c next slick-next arrow-wrapper'><img class='slick-arrow' src='static/images/content/arrow_prev.png'></div>",
         });
     }
     
