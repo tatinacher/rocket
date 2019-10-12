@@ -55,7 +55,8 @@ button { outline: none; }
   flex: 1 0 auto; 
   background-image: url('../images/content/Rectangle.jpg');
   background-position: center top;
-  background-size: 100% auto;
+  background-size: cover;
+  background-repeat: no-repeat;
   @include flex-row;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +65,6 @@ button { outline: none; }
   padding-top: 80px;
   @media (max-width: #{$screen-sm-min}) {
     background-position: center center;
-    background-size: auto 100%;
   }
 }
 
@@ -162,6 +162,7 @@ button { outline: none; }
   .content {
     justify-content: center;
     align-items: baseline;
+    position: relative;
     @media (max-width: #{$screen-sm-min}) {
       justify-content: initial;
     }
@@ -176,6 +177,35 @@ button { outline: none; }
       flex-direction: column;
       padding-bottom: 5px;
     }
+  }
+  .grapical-adds-on {
+    svg {
+      &:first-child {
+        top: 200px;
+        left: 35%;
+        position: absolute;
+      }
+      &:nth-child(2n) {
+        top: 400px;
+        left: 30%;
+        position: absolute;
+      }
+      &:nth-child(3n) {
+        top: 480px;
+        left: 36%;
+        position: absolute;
+      }
+      &:nth-child(n) {
+        @media (max-width: #{$screen-sm-min}) {
+          display: none;
+        }
+      }
+    }
+  }
+  .scroll-wrapper {
+    bottom: 20px;
+    position: absolute;
+    width: 100%
   }
 }
 #question {
@@ -346,6 +376,7 @@ button { outline: none; }
     .section__description {
       font-size: 15px;
       font-weight: 300;
+      max-width: 300px;
       @media (max-width: #{$screen-sm-min}) {
         font-size: 15px;
         text-align: left;
@@ -416,6 +447,13 @@ button { outline: none; }
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: relative;
+  }
+  .scroll-wrapper {
+    bottom: 20px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
   }
 }
 .slick-arrow {
