@@ -3,10 +3,10 @@ $(document).ready(function() {
         $(".question__text").each(function() {
             $(this).addClass("hidden");
         })
-        if (!$(this).find(".icon").hasClass("close")){
+        if (!$(this).hasClass("close")){
             $(this).closest(".question").find(".question__text").toggleClass("hidden");  
         }
-        $(this).find(".icon").toggleClass("close");          
+        $(this).toggleClass("close");      
     });
     $(".nav-item").click(function() {
         $(".nav-item").each(function() {
