@@ -29,7 +29,7 @@ $(document).ready(function() {
             .animate({
                 scrollTop: $(target).offset().top}, 'slow', 'swing', function() {});
     });
-    if(window.innerWidth < 768) {
+    if(window.innerWidth < 992) {
         $(".sections").slick({
             prevArrow: "<div class='a-left control-c prev slick-prev arrow-wrapper'><img class='slick-arrow' src='../../static/images/content/arrow_prev.png'></div>",
             nextArrow: "<div class='a-right control-c next slick-next arrow-wrapper'><img class='slick-arrow' src='../../static/images/content/arrow_prev.png'></div>",

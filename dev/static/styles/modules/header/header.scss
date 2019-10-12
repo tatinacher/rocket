@@ -7,7 +7,7 @@
     height: 74px;
     align-items: flex-end;
     z-index: 100;
-    @media (max-width: #{$screen-sm-min}) {
+    @media (max-width: #{$screen-lg-min}) {
         height: 56px;
     }
 }
@@ -21,10 +21,17 @@
     flex-basis: 25%;
     z-index: 100;
     .company-name {
-        font-size: 18px;
-        padding-left: 20px;
-        @media (max-width: #{$screen-sm-min}) {
-            display: none;
+        a {
+            font-size: 18px;
+            padding-left: 20px;
+            color: $white-text;
+            &:hover{
+                color: $button-hover;
+                cursor: pointer;
+              }
+            @media (max-width: #{$screen-lg-min}) {
+                display: none;
+            }
         }
     }
 }
@@ -35,7 +42,7 @@
         font-weight: bold;
         font-size: 16px;
         margin: 0 10px;
-        @media (max-width: #{$screen-sm-min}) {
+        @media (max-width: #{$screen-lg-min}) {
             display: none;
         }
     }
@@ -48,7 +55,7 @@
     width: 100%;
     @include flex-row-centered;
     flex-basis: 50%;
-    @media (max-width: #{$screen-sm-min}) {
+    @media (max-width: #{$screen-lg-min}) {
         display: none;
     }
     ul {
@@ -90,7 +97,7 @@ li.active.nav-item {
         justify-content: space-between;
         height: 16px;
     }
-    @media (max-width: #{$screen-sm-min}) {
+    @media (max-width: #{$screen-lg-min}) {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -119,7 +126,7 @@ li.active.nav-item {
 
 .mobile-nav{
     display: none;
-    @media (max-width: #{$screen-sm-min}) {
+    @media (max-width: #{$screen-lg-min}) {
         z-index: -1;
         opacity: 0;
         transition: 0.5s;
